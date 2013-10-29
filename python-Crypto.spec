@@ -2,11 +2,11 @@
 
 Summary:	Python Cryptography Toolkit
 Name:		python-%{module}
-Version:	2.6
-Release:	3
+Version:	2.6.1
+Release:	1
 License:	Free
 Source0:	http://ftp.dlitz.net/pub/dlitz/crypto/pycrypto/pycrypto-%{version}.tar.gz
-# Source0-md5:	88dad0a270d1fe83a39e0467a66a22bb
+# Source0-md5:	55a61a054aa66812daf5161a0d5d7eda
 URL:		http://www.dlitz.net/software/pycrypto/
 Group:		Development/Languages/Python
 %pyrequires_eq	python-modules

@@ -3,7 +3,7 @@
 Summary:	Python Cryptography Toolkit
 Name:		python-%{module}
 Version:	2.6.1
-Release:	1
+Release:	2
 License:	Free
 Source0:	http://ftp.dlitz.net/pub/dlitz/crypto/pycrypto/pycrypto-%{version}.tar.gz
 # Source0-md5:	55a61a054aa66812daf5161a0d5d7eda
@@ -45,7 +45,7 @@ install -d $RPM_BUILD_ROOT%{py_sitedir}
 
 %py_postclean
 
-rm -rf $RPM_BUILD_ROOT%{py_sitedir}/Crypto/SelfTest
+%{__rm} -rf $RPM_BUILD_ROOT%{py_sitedir}/Crypto/SelfTest
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -67,4 +67,5 @@ rm -rf $RPM_BUILD_ROOT
 %{py_sitedir}/%{module}/*.py[co]
 %{py_sitedir}/%{module}/*/*.py[co]
 %{py_sitedir}/%{module}/*/*/*.py[co]
+%{py_sitedir}/*.egg-info
 
